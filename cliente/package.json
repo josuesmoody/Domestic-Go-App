@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "prebuild": "rm -rf dist",
+    "build": "yarn run prebuild && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
