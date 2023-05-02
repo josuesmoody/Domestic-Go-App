@@ -1,0 +1,52 @@
+.valoracion {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px 0px;
+    .usuario {
+      display: flex;
+      align-items: center;
+      .foto-de-perfil {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+      }
+
+      .pais {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: gray;
+
+        img {
+          width: 20px;
+        }
+      }
+    }
+
+    .estrellas {
+      display: flex;
+      gap: 5px;
+
+      img {
+        height: 14px;
+        width: 14px;
+      }
+
+      span {
+        font-size: 14px;
+        font-weight: bold;
+        color: #ffc108;
+      }
+    }
+
+    .util {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      img {
+        width: 14px;
+      }
+    }
+  }

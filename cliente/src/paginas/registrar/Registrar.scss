@@ -1,0 +1,112 @@
+.registrar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  
+    form {
+        width: 960px;
+        padding: 100px 0px;
+        display: flex;
+        gap: 120px;
+  
+      h1 {
+        color: gray;
+        margin-bottom: 20px;
+      }
+  
+      .izquierda,
+      .derecha {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: space-between;
+  
+        label {
+          color: gray;
+          font-size: 18px;
+        }
+  
+        input,
+        textarea {
+          padding: 20px;
+          border: 1px solid rgb(216, 214, 214);
+          border-radius: 20px;
+        }
+  
+        button {
+          margin-top: 10px;
+          border: none;
+          padding: 20px;
+          color: white;
+          font-weight: 500;
+          font-size: 18px;
+          background-color: #dc1edf;
+          cursor: pointer;
+          border-radius: 20px;
+        }
+  
+        .palanca {
+          //display: flex;
+          display: contents;
+          align-items: center;
+          gap: 10px;
+  
+          .suiche {
+            position: relative;
+            display: inline-block;
+            width: 50px;
+            height: 24px;
+          }
+  
+          /* Escondemos el checkbox predeterminado de HTML */
+          .suiche input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+          }
+  
+          .deslizable {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: 0.4s;
+            transition: 0.4s;
+            border-radius: 24px;
+          }
+  
+          .deslizable:before {
+            position: absolute;
+            content: "";
+            height: 16px;
+            width: 16px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: 0.4s;
+            transition: 0.4s;
+            border-radius: 50%;
+          }
+  
+          input:checked + .deslizable {
+            background-color: #2196f3;
+          }
+  
+          input:focus + .deslizable {
+            box-shadow: 0 0 1px #2196f3;
+          }
+  
+          input:checked + .deslizable:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+          }
+        }
+      }
+    }
+  }

@@ -1,0 +1,117 @@
+.navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    transition: 0.7s all ease;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+
+    &.activo{
+        background-color: #ffffff;
+        color: black;
+
+      /*  button {
+            background-color: white !important;
+            color: rgb(255, 28, 187) !important;
+            border: 1px solid rgb(255, 28, 187) !important;
+          }*/
+    }
+
+    .contenedor{
+        width: 1400px;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0px;
+        
+        .logo{
+            margin-top: 10px;
+            font-size: 34px;
+            font-weight: bold;
+        }
+
+        #imagen-logo{
+            width: 240px;
+            height: 40px;
+        }
+    }
+        .enlaces{
+            display: flex;
+            gap: 24px;
+            align-items: center;
+            font-weight: 500;
+            font-family: "Montserrat", sans-serif;
+
+            span{
+                white-space: nowrap;
+            }
+            
+            .usuario{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                cursor: pointer;
+                position: relative;
+
+                img{
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+
+                .opciones{
+                    position: absolute;
+                    top: 50px;
+                    right: 0;
+                    padding: 20px;
+                    background-color: white;
+                    border-radius: 10px;
+                    z-index: 999;
+                    border: 1px solid lightgrey;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    width: 200px;
+                    font-weight: 300;
+                    color: gray;
+                }
+            }
+            button{
+                font-size: 15px;
+                margin-top: 0px;
+                color: rgb(255, 34, 185);
+                padding: 10px 20px;
+                border-radius: 20px;
+                border: 1px solid rgb(255, 28, 187);
+                cursor: pointer;
+                background-color: transparent;
+
+                &:hover{
+                    background-color: rgb(255, 28, 187); 
+                    border-color: rgb(255, 28, 187);
+                    color: white;
+                }
+            }
+        }
+    
+    
+    hr{
+        width: calc(100% - 2px);
+        height: 0;
+        border-top: 0.5px solid #ebe9e9;
+        border-bottom: 0.5px solid #ebe9e9;
+        border: 0.5px solid rgb(234, 234, 234);
+    }
+
+    .menu{
+        width: 1400px;
+        padding: 10px 0px;
+        display: flex;
+        justify-content: space-between;
+        font-weight: 300;
+        color: grey;
+    }
+}

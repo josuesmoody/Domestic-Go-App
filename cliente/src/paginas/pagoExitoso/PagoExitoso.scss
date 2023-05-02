@@ -1,0 +1,38 @@
+.mensajeConfirmacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    animation: entrada 1s ease-in-out;
+
+    h2 {
+        font-size: 36px;
+        font-family: Georgia, sans-serif;
+        letter-spacing: 1px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      
+      p {
+        font-size: 20px;
+        font-family: 'Arial', sans-serif;
+        line-height: 1.5;
+        text-align: center;
+      }
+      
+  }
+
+  @keyframes entrada {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+ 
+  

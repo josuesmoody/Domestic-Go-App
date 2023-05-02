@@ -1,0 +1,98 @@
+.presentacion{
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(187, 189, 189);
+    color: white;
+    //portada
+    background-image: url("../../publico/imagenes/portada.png");
+    background-repeat: no-repeat !important;
+    z-index: auto;
+    background-size: cover !important;
+
+    .contenedor{
+        //width: 1400px;
+        display: flex;
+        align-items: center;
+
+        .buscador{
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            h1{
+                font-size: 40px;
+                
+                i{
+                    font-weight: 300;
+                }
+            }
+
+            .buscar{
+                width: 450px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: white;
+
+                .entradaBuscar{
+                    
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    img{
+                        width: 20px;
+                        height: 20px;
+                        margin: 10px;
+                    }
+
+                    input{
+                        border: none;
+                        outline: none;
+
+                        &::placeholder{
+                            color: gray;
+                        }
+                    }
+                }
+
+                button{
+                    width: 120px;
+                    height: 50px;
+                    border: none;
+                    background-color: #ED4AAB;
+                    color: white;
+                    cursor: pointer;
+                    align-self: flex-end;
+                    
+                    &:hover{
+                        background-color: hsl(0, 0%, 0%); 
+                        border-color: hsl(292, 66%, 51%);
+                    }
+                }
+            }
+            .popular{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                span{
+                    width: max-content;
+                }
+                
+                button{
+                    width: max-content;
+                    color: white;
+                    background-color: transparent;
+                    border: 1px solid white;
+                    padding: 5px 10px;
+                    font-size: 14px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

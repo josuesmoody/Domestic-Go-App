@@ -1,0 +1,87 @@
+.mensaje{
+    display: flex;
+    justify-content: center;
+
+    .contenedor{
+        width: 1200px;
+        margin: 50px;
+           
+        .migas-de-pan{
+            font-weight: 300;
+            font-size: 13px;
+            color: #555;
+        }
+
+        .mensajes{
+            margin: 30px 0px;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            height: 500px;
+            overflow: scroll;
+
+            .elemento{
+                display: flex;
+                gap: 20px;
+                max-width: 600px;
+                font-size: 18px;
+
+                &.propio{
+                    flex-direction: row-reverse;
+                    align-self: flex-end;
+
+                    p{
+                        border-radius: 20px 0px 20px 20px;
+                        background-color: royalblue;
+                        color: white;
+                    }
+                }
+
+                img{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+
+                p{
+                    padding: 20px;
+                    background-color: rgb(224, 224, 224);
+                    border-radius: 0px 20px 20px 20px;
+                }
+            }
+        }
+
+        hr{
+            height: 0px;
+            border: 0.5px solid rgb(224, 224, 224);
+            margin-bottom: 20px;
+        }
+
+        .escribir{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            textarea{
+                width: 80%;
+                height: 100px;
+                padding: 10px;
+                border: 1px solid rgb(224, 224, 224);
+                border-radius: 10px;
+            }
+
+            button{
+                background-color: #d94be3;
+                padding: 20px;
+                color: white;
+                font-weight: 500;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+                width: 100px;
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+.socios{
+    background-color: #f3f3f3;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    
+
+    .contenedor{
+        width: 760px;
+        align-items: center;
+        gap: 20px;
+        color: rgb(234, 234, 234);
+        font-weight: 500;
+        display: flex;
+        justify-content: space-around;
+
+
+        #logo-explorer{
+            height: 75px;
+        }
+
+        img{
+            display: flex;
+            height: 50px;
+            object-fit: contain;
+          
+        }
+        
+
+        
+    }
+    
+}

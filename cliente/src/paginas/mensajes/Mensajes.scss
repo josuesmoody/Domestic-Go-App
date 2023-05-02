@@ -1,0 +1,66 @@
+.mensajes{
+    display: flex;
+    justify-content: center;
+    
+    .contenedor{
+        width: 1400px;
+        padding: 50px 0px;
+        
+        .titulo{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        table{
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+
+            .clasificados{
+                background-color: rgb(0, 0, 0);
+                color: white;
+                height: 50px;
+
+                th{
+                    text-align: center;
+                }
+            }
+
+            tr{
+                height: 100px;
+                background-color: rgba(226, 226, 226, 0.493);
+                
+                th{
+                    text-align: left;
+                }
+
+                td{
+                    padding: 10px;
+
+                    &:first-child{
+                        font-weight: 500;
+                    }
+
+                    &:nth-child(2), &:nth-child(3){
+                        color: gray;
+                    }
+                }
+
+                button{
+                    background-color: rgb(255, 48, 210);
+                    color: white;
+                    padding: 10px;
+                    border: none;
+                    cursor: pointer;
+                    border-radius: 5px;
+                }
+
+                &.activo{
+                    background-color: rgba(255, 189, 250, 0.228);
+                }
+            }
+        }
+    }
+}
