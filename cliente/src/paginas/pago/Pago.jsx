@@ -7,7 +7,7 @@ import FormularioPago from "../../componentes/formularioPago/FormularioPago";
 import nuevaSolicitud from "../../utiles/nuevaSolicitud";
 
 const stripePromise = loadStripe(
-  process.env.STRIPE_PRUEBA
+  "pk_test_51N0pm6DYj9KK4XyILVhon0OdKWeZXniUzHDSjHgWqg5tQFn2JZ2uTUPrbgqLiTjxXrnCyigMp11419FhczU58hd6005hbXdqjI"
 );
 
 const Pago = () => {

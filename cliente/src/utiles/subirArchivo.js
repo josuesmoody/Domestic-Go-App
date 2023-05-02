@@ -6,7 +6,7 @@ const subirArchivo = async (fichero) =>{
     datos.append("upload_preset", "domesticgo");
 
     try{
-       const respuesta = await axios.post(process.env.CLOUDINARY, datos); 
+       const respuesta = await axios.post("https://api.cloudinary.com/v1_1/ddm8rd0hz/image/upload/", datos); 
 
        const {url} = respuesta.data;
        return url;
